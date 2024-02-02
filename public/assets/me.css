@@ -1,0 +1,427 @@
+.profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.diamond-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    top: 55%;
+    border: 2px solid white;
+    z-index: 2000;
+}
+
+.diamond-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(-45deg);
+   
+}
+
+.description {
+    padding-left: 20px;
+}
+
+
+/*intro me*/
+.me_container {
+    top: 100%;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+  }
+
+.me_container img {
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    margin-right: 10px; /* Add some space between the image and the paragraph */
+    
+    z-index: 1001;
+  }
+
+  /* Slideshow container */
+.slideshow-container {
+    width: 99%;
+    
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    max-width: fit-content;
+    z-index: 3000;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 3000;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.me_par {
+    margin-top: 100px;
+    top: 70%;
+    width: 70%;
+    text-align: center;
+    margin: 15.5vw 0 0 14vw ;
+    position: relative;
+    font-size: 2vw;
+    color: #ffffff;
+    z-index: 2001;
+    font-size: 25px;
+    text-align: center;
+}
+
+.content__title{
+    top: 35%;
+}
+
+@media screen and (max-width: 768px) {
+    .content__title{
+        top: 30%;
+    }
+
+    .me_par {
+        font-size: 3vw;
+        width: 50%;  /* Adjust width for smaller screens */
+        margin: 25vw 0 0 25vw;  /* Adjust margin for smaller screens */
+    }
+
+    #intro_name{
+        top: 35%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .me_par {
+        font-size: 4vw;  /* Further adjust font size for even smaller screens */
+        width: 50%;  /* Further adjust width for even smaller screens */
+        margin: 25vw 0 0 25vw;  /* Further adjust margin for even smaller screens */
+    }
+    #intro_name{
+        top: 30%;
+    }
+
+    #tech_name{
+        top: 15%;
+        
+    }
+
+    .content__title{
+        top: 35%;
+        margin-left: -1%
+    }
+}    
+
+/*projects*/
+
+#proj{
+    top: 25%;
+    position: fixed;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center content horizontally */
+    gap: 5px; /* Add some gap between images */
+    top: 100px;
+    width: 100%;
+}
+
+/* Individual image styling */
+.image-container img {
+    width: 15%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the frame */
+    border: 2px solid transparent; /* Initially transparent border */
+    cursor: pointer;
+    transition: border 0.3s; /* Add transition effect for a smoother change */
+    border-radius: 8px;
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .mySlides{
+        max-width: 100%;
+    }
+
+    body{
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    #proj{
+        top: 35%;
+        overflow-y: hidden;
+    }
+    
+    .image-container {        
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        align-items: center;
+        overflow: auto;
+        gap: 20px;
+        margin-top: 500px;
+    }
+
+    .image-container img {
+        width: 50%;
+        height: 150px;
+    }
+}
+
+
+.image-container img:hover {
+    border-color: #ffffff; /* Change the border color on hover */
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9); 
+    text-align: center;
+    padding: 20px;
+    z-index: 4002;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.overlay img {
+    max-width: 50%;
+    max-height: 50%;
+    margin-right: 20px;
+}
+
+.overlay p {
+    color: white;
+    margin: 0;
+    text-align: left;
+    max-width: 40%;
+}
+
+/*tech used*/
+body{
+    margin: 0 auto;
+}
+
+#image-container{
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .image-with-background {
+    width: 100%; /* Make the images responsive */
+    max-width: 100px; /* Set a maximum width for each image */
+    margin: 10px; /* Add some margin between images */
+    
+    
+     /* Set background color to white */
+    padding: 10px;
+  }
+
+  .image-with-background img {
+    max-width: 100px;
+    width: 100%; /* Make the image fill the circular container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove extra space below the image */
+    margin: 0; /* Center the image within the circular container */
+  }
+
+  .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .image-with-background:hover .hover-text {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 1000px) {
+    #image-container {
+        width: 90%; /* Adjust for smaller screens */
+    }
+
+    .image-with-background img{
+        width: 130%;
+    }
+
+    #tech_name{
+        font-size: 50px;
+    }
+
+    .image-with-background {
+        max-width: 10%; /* Adjust maximum width for smaller screens */
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #image-container {
+    
+    width: 70%;
+    pad: 10px;
+    }
+
+    .center-top{
+        top: 2%;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .image-with-background {
+        max-width: 30%;
+    }
+
+    #intro_name{
+        position: fixed;
+        top: 0%;
+        padding-top: 150px;
+        padding-bottom: 20px;
+        background-color: #0d0d0d;
+    }
+
+    .image-container-tech{
+        position: relative;
+        top: 90%;
+        overflow-y: inherit;
+        z-index: 0;
+    }
+
+    .image-with-background img {
+        width: 140%;
+    }
+
+    #image-container {
+    margin-top: 100%;
+       width: 70%;
+    }
+
+    .center-top{
+        top: 2%;
+    }
+
+    
+}
+
+    @media screen and (max-width: 450px){
+    #image-container-tech{
+        top: 300px;
+    }
+    }
+
+    @media screen and (max-width: 360px){
+        #intro_name{
+            top: 5%;
+        }
+
+        #imageContainer {
+            margin-top: 70%;
+            align-items: center;
+        }
+
+        .center-top{
+            top: 2%;
+        }
+
+        .slideshow-container{
+            overflow-y: scroll;
+        }
+
+        #image-container {
+        margin-top: 30%;
+        width: 70%;
+        }
+}

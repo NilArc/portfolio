@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Absalon - Portfolio</title>
+		<meta name="description" content="A set of animated ambient canvas backgrounds with different effects" />
+		<meta name="keywords" content="canvas, ambient, background, animation, javascript, demo, web development" />
+		<meta name="author" content="Codrops" />
+		
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+		<link rel="stylesheet" type="text/css" href="base.css" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="me.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+        
+    </head>
+	<body class="space">
+        <header class="center-top">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="me.html" >About</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="content content--canvas">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="content content--canvas">
+                            <div class="profile-section">
+                                <div class="diamond-container">
+                                    <img src="src/prof.png" alt="Your Face Photo" class="diamond-photo">
+                                </div>
+                                <div class="description">
+                                    <h2 class="content__title" >About Me</h2>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <h2 class="content__title" id="tech_name">Hello I'm Arc</h2>
+                        <p class="me_par">A dedicated student from West Visays State University
+                            where I currently taking up Bachelor of Science in Computer Science</p>
+
+                        <img src="" alt="">
+                
+                
+                    </div>
+
+                    <div class="mySlides fade" style="align-items: center; margin: 0 auto;">
+                        <h2 class="content__title" id="intro_name" >Technology Used</h2>
+                            <div id="image-container" class="image-container-tech"></div>
+                
+                
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <h2 class="content__title"  id="intro_name">Projects</h2>
+                        <p class="me_par"></p>
+                        <div class="image-container" id="imageContainer"></div>
+
+                        <div class="overlay" id="overlay">
+                            <img id="overlayImage" alt="Overlay Image">
+                            <p id="overlayDescription">This is the description</p><br><br>
+                            
+                        </div>
+
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" style="position: fixed;" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" style="position: fixed;" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                
+            </div>
+        </main>
+        <script src="noise.min.js"></script>
+        <script src="util.js"></script>
+        <script src="me.js"></script>
+        <script src="projects.js"></script>
+        <script src="tech.js"></script>
+        <script src="swir.js"></script>
+        
+    </body>
+</html>
