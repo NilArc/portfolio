@@ -1,4 +1,4 @@
-const images = ["src/html.png", "src/css.png", "src/js.png", "src/py.png", "src/cpp.png", "src/java.png", "src/php.png", "src/sql.png", "src/xml.png"];
+const images = ["/assets/img/html.png", "/assets/img/css.png", "/assets/img/js.png", "/assets/img/py.png", "assets/img/cpp.png", "assets/img/java.png", "assets/img/php.png", "assets/img/sql.png", "assets/img/xml.png"];
 
 const substitutes = ["HTML or Hypertext Markup Language", "CSS or Cascading Style Sheets", "JavaScript","Python", "C++","Java", "PHP", "SQL or Structured Query Language","XML or eXtensible Markup Language"];
 const container = document.getElementById("image-container");

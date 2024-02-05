@@ -8,10 +8,10 @@
 		<meta name="keywords" content="canvas, ambient, background, animation, javascript, demo, web development" />
 		<meta name="author" content="Codrops" />
 		
-        <link rel="<?base_url:" type="text/css" href="base.css" />
+        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-		<link rel="stylesheet" type="text/css" href="base.css" />
-		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/base.css'); ?>" />
+		<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/styles.css'); ?>" />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
         
     </head>
@@ -19,9 +19,9 @@
         <header class="center-top">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="me.html">About Me</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="<?= base_url(''); ?>">Home</a></li>
+                    <li><a href="<?= base_url('me'); ?>">About Me</a></li>
+                    <li><a href="<?= base_url('contacts'); ?>">Contacts</a></li>
                 </ul>
             </nav>
         </header>
@@ -35,8 +35,8 @@
 
             </div>
         </main>
-        <script src="noise.min.js"></script>
-        <script src="util.js"></script>
+        <script src="<?= base_url('assets/js/noise.min.js'); ?>"></script>
+        <script src="<?= base_url('assets/js/util.js'); ?>"></script>
         
         <script>
     

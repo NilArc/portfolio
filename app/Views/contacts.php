@@ -19,9 +19,9 @@
         <header class="center-top">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="me.html" >About</a></li>
-                    <li><a href="#projects">Contacts</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="me.php" >About</a></li>
+                    <li><a href="#">Contacts</a></li>
                 </ul>
             </nav>
         </header>
